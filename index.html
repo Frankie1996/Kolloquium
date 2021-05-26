@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 		<link rel="stylesheet" href="plugin/appearance/animate.min.css">
 		<link rel="stylesheet" href="plugin/appearance/appearance.css">
+		<link rel="stylesheet" href="dist/custom.css">
 	</head>
 	<body>
 		<div class="reveal">
@@ -62,6 +63,7 @@
 
 				<!-- Video -->
 				<section>
+					<h3>Demoseite des Javascript Bibliothek</h3>
 					<div id="waldrappProjektVideo"></div>
 				</section>
 
@@ -101,20 +103,35 @@
 
 				<!-- Pie Chart -->
 				<section>
-					<h2>Beispiel PieChart</h2>
-					<iframe id="pieChart" class="stretch" style="width:500px; height:500px; overflow: hidden; margin: auto 10px auto auto;" scrolling="no" data-chart></iframe>
+					<h3>Beispiel PieChart</h3>
+					<iframe id="pieChart" style="overflow: hidden; margin: auto 10px auto auto; height: 496px; width: 960px;" scrolling="no" data-chart></iframe>
+					<small>
+						<span style="text-decoration: underline red; text-decoration-thickness: 3px; padding-right: 10px">Red - 300</span>
+						<span style="text-decoration: underline green; text-decoration-thickness: 3px;">Green - 50</span>
+						<span style="text-decoration: underline yellow; text-decoration-thickness: 3px; padding-left: 10px">Yellow - 100</span>
+					</small>
 				</section>
 
 				<!-- Bar Chart -->
-				<section>
-					<h2>Beispiel BarChart</h2>
-					<iframe id="barChart" class="stretch" style="width:500px; height:500px; overflow: hidden; margin: auto 10px auto auto;" scrolling="no" data-chart></iframe>
+				<section style="top: 0px; display: block;">
+					<h3>Beispiel BarChart</h3>
+					<iframe id="barChart" style="overflow: hidden; margin: 5px 5px auto auto; height: 482px; width: 960px;" class="stretch" scrolling="no" data-chart="" src="" srcdoc=""></iframe>
+					<small>
+						<span style="text-decoration: underline red; text-decoration-thickness: 3px; padding-right: 10px">Red - 300</span>
+						<span style="text-decoration: underline green; text-decoration-thickness: 3px;">Green - 50</span>
+						<span style="text-decoration: underline yellow; text-decoration-thickness: 3px; padding-left: 10px">Yellow - 100</span>
+					</small>
 				</section>
 
 				<!-- Radar Chart -->
 				<section>
-					<h2>Beispiel RadarChart</h2>
+					<h3>Beispiel RadarChart</h3>
 					<iframe id="radarChart" class="stretch" style="width:500px; height:500px; overflow: hidden; margin: auto 10px auto auto;" scrolling="no" data-chart></iframe>
+					<small>
+						<span style="text-decoration: underline red; text-decoration-thickness: 3px; padding-right: 10px">Red - 300</span>
+						<span style="text-decoration: underline green; text-decoration-thickness: 3px;">Green - 50</span>
+						<span style="text-decoration: underline yellow; text-decoration-thickness: 3px; padding-left: 10px">Yellow - 100</span>
+					</small>
 				</section>
 
 				<!-- Tag-Cloud -->
@@ -123,7 +140,7 @@
 						<h3>Überlegungen</h3>
 					</section>
 					<section tagcloud>
-						Twitter Bootstrap
+						TwitterBootstrap
 						jQuery
 						less
 						GruntJS
@@ -217,6 +234,7 @@
 		<script src="plugin/appearance/appearance.js"></script>
 		<script async src="https://www.youtube.com/iframe_api"></script>
 		<script>
+			// YouTube Video
 			function onYouTubeIframeAPIReady() {
 				var player;
 				player = new YT.Player('waldrappProjektVideo', {
@@ -242,13 +260,13 @@
 					}
 				});
 			}
-		</script>
-		<script>
+
+			// Charts
 			let chartsObject = [
 				// PieChart
 				{
-					selector : "#pieChart", // must be query like an id that points to the iframe
-					type : "pie", // can be either of the following : line, bar, radar, polararea, pie, doughnut
+					selector : "#pieChart",
+					type : "pie",
 					data : [
 						{
 							value: 300,
@@ -268,24 +286,20 @@
 							highlight: "#FFC870",
 							label: "Yellow"
 						}
-					], // can be an array ([]) or an object ({}). Check out chart.js documentation
+					],
 					options: {
 						responsive: true,
-						title: {
-							display: true,
-							text: 'TEST'
-						}
-					}, // must be a object ({}) check out chart.js documentation
-					canvas : { // Optional
-						width : "250px",  //the width of the canvas. Default is 250px
-						height : "150px", // the width of the canvas. Default is 150px
+					},
+					canvas : {
+						width : "100%",
+						height : "100%"
 					}
 				},
 
 				// BarChart
 				{
-					selector : "#barChart", // must be query like an id that points to the iframe
-					type : "bar", // can be either of the following : line, bar, radar, polararea, pie, doughnut
+					selector : "#barChart",
+					type : "bar",
 					data : {
 						labels: ["January", "February", "March", "April", "May", "June", "July"],
 						datasets: [
@@ -309,6 +323,10 @@
 					},
 					options : {
 						responsive : true
+					},
+					canvas : {
+						width : "100%",
+						height : "100%"
 					}
 				},
 
@@ -338,7 +356,7 @@
 				}
 			];
 
-			// - https://revealjs.com/config/
+			// Initialize Reveal JS
 			Reveal.initialize({
 				slideNumber: 'c/t',
 				hideCursorTime: 2500,
@@ -365,11 +383,7 @@
 					{ src: 'plugin/d3js/d3.v4.min.js' },
 					{ src: 'plugin/d3js/d3js.js' },
 				],
-
-
-
 			});
-
 		</script>
 	</body>
 </html>
