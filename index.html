@@ -13,133 +13,274 @@
 		<link rel="stylesheet" href="plugin/appearance/animate.min.css">
 		<link rel="stylesheet" href="plugin/appearance/appearance.css">
 		<link rel="stylesheet" href="dist/custom.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	</head>
 	<body>
 		<div class="reveal">
+			<div class="menubar">
+				<ul class="menu" aria-disabled="true">
+					<li><a class="disabled" href="#/firstmenuitem">Warum?</a></li>
+					<li><a class="disabled" href="#/secondmenuitem">Thesis</a></li>
+					<li><a class="disabled" href="#/thirdmenuitem">Lehrprojekt</a></li>
+					<li><a class="disabled" href="#/fourthmenuitem">Zwischenfazit</a></li>
+					<li><a class="disabled" href="#/fifthmenuitem">Ausblick</a></li>
+					<li><a class="disabled" href="#/sixthmenuitem">?</a></li>
+				</ul>
+			</div>
 			<div class="slides">
 
-				<!-- Home -->
-				<section>
+				<section class="center" data-transition="fade">
 					<a href="https://storytellr.frankzinsli.ch" target="_blank">
 						<img src="image/storytellr-js.svg" alt="StorytellrJS - Logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="logo">
 					</a>
-					<h3>Inwiefern beeinflussen Storytelling-Komponenten im Web, die Wahrnehmung des Nutzers?</h3>
+					<h3>Inwiefern beeinflussen Storytelling-Komponenten auf Webseiten, die Wahrnehmung des Nutzers?</h3>
 					<br>
 					<p>
 						<small>Von <a href="https://frankzinsli.ch">Frank Zinsli</a></small>
 					</p>
 				</section>
 
-				<!-- Table of Contens -->
-				<section>
-					<section data-auto-animate>
-						<h2>Inhalt</h2>
-						<img class="r-stretch" data-src="image/bernardo_03.webp" style="max-height: 100%">
+				<!-- Warum Storytelling auf Webseiten? -->
+				<section id="firstmenuitem">
+					<section data-background="image/bernardo_01.jpg" data-background-opacity="0.3">
+						<h2>Warum Storytelling im Web?</h2>
+						<ul>
+							<li class="fragment fade-up">Digital Storytelling ist im Trend</li>
+						</ul>
 					</section>
-					<section data-auto-animate>
-						<h2>Inhalt</h2>
-						<ol>
-							<li>One is smaller than...</li>
-						</ol>
+					<section>
+						<h3>Kommunikationsbudget verteilt sich auf die digitalen Kanäle</h3>
+						<img class="stretch" data-src="image/Online-Anteil-an-Werbeinvestition.jpg">
 					</section>
-					<section data-auto-animate>
-						<h2>Inhalt</h2>
-						<ol>
-							<li>One is smaller than...</li>
-							<li>One is smaller than...</li>
-						</ol>
+					<section>
+						<h3>Verbesserungsvorschläge von Redakteuren und Bloggern in der Deutschschweiz</h3>
+						<div class="r-stack stretch">
+							<img data-fragment-index="0" data-src="image/Verbesserungspotenzial-mit-Medienstellung.jpg" style="max-height: 100%">
+							<img class="fragment" data-fragment-index="1" data-src="image/Verbesserungspotenzial-mit-Medienstellung-Highlighted.jpg" style="max-height: 100%">
+						</div>
+					</section>
+					<section data-background="image/bernardo_01.jpg" data-background-opacity="0.3">
+						<h2>Warum Storytelling im Web?</h2>
+						<ul>
+							<li>Digital Storytelling ist im Trend</li>
+							<li class="fragment fade-up">Persönliche Interesse</li>
+						</ul>
 					</section>
 				</section>
 
-				<!-- Image -->
-				<section data-background="image/bernardo_01.webp">
-					<h2>Herzlich willkommen</h2>
-					<img class="r-stretch" data-src="image/bernardo_01.webp" style="max-height: 100%">
-				</section>
+				<!-- Thesis -->
+				<section id="secondmenuitem">
+					<section data-auto-animate="" data-background="image/bernardo_01.jpg" data-background-opacity="0.3">
+						<h2>Thesis</h2>
+						<h4 class="fragment">"Inwiefern beeinflussen Storytelling-Komponenten auf Webseiten, die Wahrnehmung des Nutzers, auf den Inhalt?"</h4>
+					</section>
+					<section data-auto-animate data-background="image/bernardo_01.jpg" data-background-opacity="0.3">
+						<h2>Thesis</h2>
+						<h4 class="fragment">Wie bin ich vorgegangen?</h4>
+						<h4 class="fragment">Was ist der aktuelle Stand?</h4>
+					</section>
+					<section data-auto-animate data-background="image/bernardo_01.jpg" data-background-opacity="0.3">
+						<h2>Thesis</h2>
+						<h4 style="font-size: larger">Wie bin ich vorgegangen?</h4>
+						<h4 style="font-size: smaller">Was ist der aktuelle Stand?</h4>
+					</section>
+					<section>
+						<h3>Vorgehen</h3>
+						<ul>
+							<li class="fragment">Einleitung geschrieben (aufbauend auf das Proposal)</li>
+							<li class="fragment">Theorieteil geschrieben</li>
+							<li class="fragment">Methodenteil</li>
+							<ul class="fragment">
+								<li>Experteninterviews</li>
+								<li>Online-Umfrage</li>
+								<li>Usability-Test inkl. Interview</li>
+							</ul>
+						</ul>
+					</section>
+					<section>
+						<h3>Experteninterviews</h3>
 
-				<!-- Background iFrame -->
-				<section data-background-iframe="https://storytellr.frankzinsli.ch" data-background-interactive>
-				</section>
+						<div style="margin-top: 20px; margin-bottom: 20px">
+							<img src="image/ancilla_schmidhauser.gif" width="300" height="168.75">
+							<img src="image/felix_murbach.gif" width="300" height="168.75">
+							<img src="image/stefan_huber.gif" width="300" height="168.75">
+						</div>
 
-				<!-- Video -->
-				<section>
-					<h3>Demoseite des Javascript Bibliothek</h3>
-					<div id="waldrappProjektVideo"></div>
-				</section>
-
-				<!-- Table -->
-				<section>
-					<h2>Experteninterviews</h2>
-
-					<div style="margin-top: 20px; margin-bottom: 20px">
-						<img class="animated flipInX" src="image/ancilla_schmidhauser.gif" width="300" height="168.75">
-						<img class="animated flipInX" src="image/felix_murbach.gif" width="300" height="168.75">
-						<img class="animated flipInX" src="image/stefan_huber.gif" width="300" height="168.75">
-					</div>
-
-					<table>
-						<thead>
+						<table>
+							<thead>
 							<tr>
 								<th>Experte</th>
 								<th>Fachgebiet</th>
 							</tr>
-						</thead>
-						<tbody>
+							</thead>
+							<tbody>
 							<tr>
 								<td>Ancilla Schmidhauser</td>
 								<td>$1</td>
 							</tr>
-						<tr>
-							<td>Felix Murbach</td>
-							<td>$2</td>
-						</tr>
-						<tr>
-							<td>Stefan Huber</td>
-							<td>$3</td>
-						</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<!-- Pie Chart -->
-				<section>
-					<h3>Beispiel PieChart</h3>
-					<iframe id="pieChart" style="overflow: hidden; margin: auto 10px auto auto; height: 496px; width: 960px;" scrolling="no" data-chart></iframe>
-					<small>
-						<span style="text-decoration: underline red; text-decoration-thickness: 3px; padding-right: 10px">Red - 300</span>
-						<span style="text-decoration: underline green; text-decoration-thickness: 3px;">Green - 50</span>
-						<span style="text-decoration: underline yellow; text-decoration-thickness: 3px; padding-left: 10px">Yellow - 100</span>
-					</small>
-				</section>
-
-				<!-- Bar Chart -->
-				<section style="top: 0px; display: block;">
-					<h3>Beispiel BarChart</h3>
-					<iframe id="barChart" style="overflow: hidden; margin: 5px 5px auto auto; height: 482px; width: 960px;" class="stretch" scrolling="no" data-chart="" src="" srcdoc=""></iframe>
-					<small>
-						<span style="text-decoration: underline red; text-decoration-thickness: 3px; padding-right: 10px">Red - 300</span>
-						<span style="text-decoration: underline green; text-decoration-thickness: 3px;">Green - 50</span>
-						<span style="text-decoration: underline yellow; text-decoration-thickness: 3px; padding-left: 10px">Yellow - 100</span>
-					</small>
-				</section>
-
-				<!-- Radar Chart -->
-				<section>
-					<h3>Beispiel RadarChart</h3>
-					<iframe id="radarChart" class="stretch" style="width:500px; height:500px; overflow: hidden; margin: auto 10px auto auto;" scrolling="no" data-chart></iframe>
-					<small>
-						<span style="text-decoration: underline red; text-decoration-thickness: 3px; padding-right: 10px">Red - 300</span>
-						<span style="text-decoration: underline green; text-decoration-thickness: 3px;">Green - 50</span>
-						<span style="text-decoration: underline yellow; text-decoration-thickness: 3px; padding-left: 10px">Yellow - 100</span>
-					</small>
-				</section>
-
-				<!-- Tag-Cloud -->
-				<section>
-					<section data-auto-animate>
-						<h3>Überlegungen</h3>
+							<tr>
+								<td>Felix Murbach</td>
+								<td>$2</td>
+							</tr>
+							<tr>
+								<td>Stefan Huber</td>
+								<td>$3</td>
+							</tr>
+							</tbody>
+						</table>
 					</section>
-					<section tagcloud>
+					<section>
+						<h3>Online-Umfrage unter MMP-Studenten</h3>
+					</section>
+					<section>
+						<h4>Was würdest du einsetzten?</h4>
+						<iframe id="pieChart" style="overflow: hidden; margin: auto 10px auto auto; height: 496px; width: 960px;" scrolling="no" data-chart></iframe>
+						<small>
+							<span style="text-decoration: underline red; text-decoration-thickness: 3px; padding-right: 10px">Red - 300</span>
+							<span style="text-decoration: underline green; text-decoration-thickness: 3px;">Green - 50</span>
+							<span style="text-decoration: underline yellow; text-decoration-thickness: 3px; padding-left: 10px">Yellow - 100</span>
+						</small>
+					</section>
+					<section>
+						<h4>Was ist Storytelling?</h4>
+						<iframe id="barChart" style="overflow: hidden; margin: 5px 5px auto auto; height: 482px; width: 960px;" class="stretch" scrolling="no" data-chart="" src="" srcdoc=""></iframe>
+						<small>
+							<span style="text-decoration: underline red; text-decoration-thickness: 3px; padding-right: 10px">Red - 300</span>
+							<span style="text-decoration: underline green; text-decoration-thickness: 3px;">Green - 50</span>
+							<span style="text-decoration: underline yellow; text-decoration-thickness: 3px; padding-left: 10px">Yellow - 100</span>
+						</small>
+					</section>
+					<section>
+						<h2>Usability-Test inkl. Interview</h2>
+					</section>
+					<section data-auto-animate data-background="image/bernardo_01.jpg" data-background-opacity="0.3">
+						<h2>Thesis</h2>
+						<h4>Wie bin ich vorgegangen?</h4>
+						<h4>Was ist der aktuelle Stand?</h4>
+					</section>
+					<section data-auto-animate data-background="image/bernardo_01.jpg" data-background-opacity="0.3">
+						<h2>Thesis</h2>
+						<h4 style="font-size: smaller">Wie bin ich vorgegangen?</h4>
+						<h4 style="font-size: larger">Was ist der aktuelle Stand?</h4>
+					</section>
+					<section>
+						<h3>Aktuelle Stand</h3>
+						<ul>
+							<li class="fragment">Erledigt</li>
+							<ul class="fragment">
+								<li>Einleitung</li>
+								<li>Theorieteil</li>
+								<li>Methodenteil</li>
+							</ul>
+							<br>
+							<li class="fragment">Offen</li>
+							<ul class="fragment">
+								<li>Auswertung ausschreiben (Empirieteil)</li>
+								<li>Fehler korrigieren</li>
+								<li>Leitfaden entwickeln</li>
+							</ul>
+						</ul>
+					</section>
+				</section>
+
+				<!-- Lehrprojekt -->
+				<section id="thirdmenuitem">
+					<section data-auto-animate data-background="image/bernardo_01.jpg" data-background-opacity="0.3">
+						<h2>Lehrprojekt</h2>
+						<h4 class="fragment">Welche Produkte entstehen?</h4>
+						<h4 class="fragment">Wie gehe ich vor?</h4>
+						<h4 class="fragment">Was ist der aktuelle Stand?</h4>
+					</section>
+					<section data-auto-animate data-background="image/bernardo_01.jpg" data-background-opacity="0.3">
+						<h2>Lehrprojekt</h2>
+						<h4 style="font-size: larger">Welche Produkte entstehen?</h4>
+						<h4 style="font-size: smaller">Wie gehe ich vor?</h4>
+						<h4 style="font-size: smaller">Was ist der aktuelle Stand?</h4>
+					</section>
+					<section data-auto-animate>
+						<h3>Produkte</h3>
+						<ul>
+							<li class="fragment">Storytelling <span>Javascript Bibliothek</span> für MMP-Studenten</li>
+							<ul class="fragment">
+								<li>Prozessdokumentation</li>
+								<li>Testkonzept</li>
+							</ul>
+							<li class="fragment">Landingpage für die Javascript-Bibliothek</li>
+							<li class="fragment">Demoseite</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h3>Produkte</h3>
+						<ul>
+							<li>Storytelling <span style="text-decoration: underline; font-weight: bolder">Javascript Bibliothek</span> für MMP-Studenten</li>
+							<ul>
+								<li>Prozessdokumentation</li>
+								<li>Testkonzept</li>
+							</ul>
+							<li>Landingpage für die Javascript-Bibliothek</li>
+							<li>Demoseite</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Javascript-Bibliothek</h3>
+						<ol>
+							<li class="fragment">Sammlung von Klassen, Komponenten oder Funktionen</li>
+							<li class="fragment">JavaScript-Datei die eingebunden werden kann</li>
+							<li class="fragment">Hilfsfunktionen für die Programmierung</li>
+						</ol>
+					</section>
+					<section>
+						<h3>Einige Beispiele von JavaScript-Bibliotheken</h3>
+						<table>
+							<tbody>
+							<tr>
+								<td>
+									<a href="https://jquery.com/" target="_blank">
+										<img height="200px" src="image/logos/jquery.jpg" alt="jQuery icon" style="border: none;">
+									</a>
+								</td>
+								<td>
+									<a href="https://d3js.org/" target="_blank">
+										<img height="200px" src="image/logos/d3.jpg" alt="D3js icon" style="border: none;"">
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="https://animejs.com/" target="_blank">
+										<img height="200px" src="image/logos/anime.jpg" alt="animejs icon" style="border: none;">
+									</a>
+								</td>
+								<td>
+									<a href="https://www.chartjs.org/" target="_blank">
+										<img height="200px" src="image/logos/chart.jpg" alt="Chartjs icon" style="border: none;">
+									</a>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-auto-animate data-background="image/bernardo_01.jpg" data-background-opacity="0.3">
+						<h2>Lehrprojekt</h2>
+						<h4 style="font-size: larger">Welche Produkte entstehen?</h4>
+						<h4 style="font-size: smaller">Wie gehe ich vor?</h4>
+						<h4 style="font-size: smaller">Was ist der aktuelle Stand?</h4>
+					</section>
+					<section data-auto-animate data-background="image/bernardo_01.jpg" data-background-opacity="0.3">
+						<h2>Lehrprojekt</h2>
+						<h4 style="font-size: smaller">Welche Produkte entstehen?</h4>
+						<h4 style="font-size: larger">Wie gehe ich vor?</h4>
+						<h4 style="font-size: smaller">Was ist der aktuelle Stand?</h4>
+					</section>
+					<section>
+						<h3>Vorgehen</h3>
+						<ol>
+							<li class="fragment">Was muss die Javascript-Bibliothek können?</li>
+							<li class="fragment">Können die Komponenten angepasst werden?</li>
+							<li class="fragment">Wie wird die Javascript-Bibliothek umgesetzt?</li>
+						</ol>
+					</section>
+					<section tagcloud shuffle>
 						TwitterBootstrap
 						jQuery
 						less
@@ -148,91 +289,158 @@
 						JSLint
 						markdown
 						sass
-						jade
-						coffeescript
-						codekit
+						vue
 						livereload
 						web-build
 						jQuery UI
 						mustache
-						emmet.io
-						bower
-						browserstack
+						webpack
+						postcss
 						npm
-						RequireJS
-						socket.io
 						jQuery Mobile
 						node.js
-						Jasmine
+						scss
+					</section>
+					<section>
+						<h3>Webpack</h3>
+						<ol>
+							<li class="fragment">Code Splitting</li>
+							<li class="fragment">Vereinfachtes Caching</li>
+							<li class="fragment">Ziel-Typ: UMD => Universal Module Definition</li>
+						</ol>
+					</section>
+					<section data-auto-animate>
+						<h2 data-id="code-title">Konfiguration</h2>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						const path = require("path");
+						const common = require("./webpack.common");
+						const {merge} = require("webpack-merge");
+						const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+						module.exports = merge(common, {
+						  mode: "production",
+						  output: {
+							filename: "script/[name].min.js",
+							path: path.resolve(__dirname, "dist"),
+							assetModuleFilename: 'assets/[name]-[hash][ext]',
+							library: "$story",
+					</code></pre>
+					</section>
+
+					<section data-auto-animate>
+						<h2 data-id="code-title">Konfiguration</h2>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|9|4|21-26|30-34"><script type="text/template">
+const path = require("path");
+const common = require("./webpack.common");
+const {merge} = require("webpack-merge");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+module.exports = merge(common, {
+  mode: "production",
+  output: {
+	filename: "script/[name].min.js",
+	path: path.resolve(__dirname, "dist"),
+	assetModuleFilename: 'assets/[name]-[hash][ext]',
+	library: "$story",
+	libraryTarget: "umd",
+	globalObject: 'this',
+	clean: true
+  },
+  module: {
+	rules: [
+	  {
+		test: /\.scss$/,
+		use: [
+		  MiniCssExtractPlugin.loader, // extract css -> file
+		  "css-loader",   // css   -> js
+		  "postcss-loader", // postcss plugin
+		  "sass-loader"   // sass  -> css
+		]
+	  },
+	]
+  },
+  plugins: [
+	new MiniCssExtractPlugin({
+	  filename: "style/[name].min.css"
+	})
+  ]
+});
+						</script>
+					</code></pre>
+					</section>
+					<section data-auto-animate data-background="image/bernardo_01.jpg" data-background-opacity="0.3">
+						<h2>Lehrprojekt</h2>
+						<h4 style="font-size: smaller">Welche Produkte entstehen?</h4>
+						<h4 style="font-size: larger">Wie gehe ich vor?</h4>
+						<h4 style="font-size: smaller">Was ist der aktuelle Stand?</h4>
+					</section>
+					<section data-auto-animate data-background="image/bernardo_01.jpg" data-background-opacity="0.3">
+						<h2>Lehrprojekt</h2>
+						<h4 style="font-size: smaller">Welche Produkte entstehen?</h4>
+						<h4 style="font-size: smaller">Wie gehe ich vor?</h4>
+						<h4 style="font-size: larger">Was ist der aktuelle Stand?</h4>
+					</section>
+					<section>
+						<h2>Der aktuelle Stand</h2>
+						<ul>
+							<li class="fragment">Javascript Bibliothek</li>
+							<ul>
+								<li class="fragment">Programmierumgebung steht</li>
+								<li class="fragment">Erster Komponent wurde programmiert</li>
+							</ul>
+						</ul>
+					</section>
+					<section>
+						<iframe
+							data-src="https://storytellr.frankzinsli.ch"
+							class="stretch"
+						></iframe>
+					</section>
+					<section>
+						<h3>Demoseite des Javascript Bibliothek</h3>
+						<div id="waldrappProjektVideo"></div>
+					</section>
+					<section>
+						<h3>Abstimmung</h3>
+						<img class="stretch" src="image/mentimeter_qr_code.png">
+						<br>
+						<a href="https://www.menti.com/shs7i1qkaw">https://www.menti.com/shs7i1qkaw</a>
+					</section>
+					<section>
+						<div style="overflow: hidden" class="stretch">
+							<iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/embed/d6ab6d3d551f94e6c567d1a9b401f1ef/a2a77eab8570' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe>
+						</div>
 					</section>
 				</section>
 
-				<!-- Showing Code -->
-				<section data-auto-animate>
-					<h2 data-id="code-title">Pretty Code</h2>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
-						import React, { useState } from 'react';
-
-						function Example() {
-						  const [count, setCount] = useState(0);
-
-						  return (
-						    ...
-						  );
-						}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="https://highlightjs.org/usage/">highlight.js</a>.</p>
+				<section id="fourthmenuitem">
+					<!-- Radar Chart -->
+					<section>
+						<h2>Zwischenfazit</h2>
+						<iframe id="radarChart" class="stretch" style="width:500px; height:500px; overflow: hidden; margin: auto 10px auto auto;" scrolling="no" data-chart></iframe>
+						<small>
+							<span style="text-decoration: underline red; text-decoration-thickness: 3px; padding-right: 10px">Red - 300</span>
+							<span style="text-decoration: underline green; text-decoration-thickness: 3px;">Green - 50</span>
+							<span style="text-decoration: underline yellow; text-decoration-thickness: 3px; padding-left: 10px">Yellow - 100</span>
+						</small>
+					</section>
 				</section>
 
-				<section data-auto-animate>
-					<h2 data-id="code-title">With animations</h2>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
-						import React, { useState } from 'react';
-
-						function Example() {
-						const [count, setCount] = useState(0);
-
-						return (
-						<div>
-						      <p>You clicked {count} times</p>
-						      <button onClick={() => setCount(count + 1)}>
-						        Click me
-							</button>
-						    </div>
-						);
-						}
-
-						function SecondExample() {
-						const [count, setCount] = useState(0);
-
-						return (
-						<div>
-						      <p>You clicked {count} times</p>
-						      <button onClick={() => setCount(count + 1)}>
-						        Click me
-							</button>
-						    </div>
-						);
-						}
-					</script></code></pre>
+				<section id="fifthmenuitem">
+					<h2>Ausblick</h2>
 				</section>
 
-				<!-- Animations -->
-				<section>
-					<ul>
-						<li class="animated bounceInLeft">Add it to any text element</li>
-						<li class="animated bounceInLeft">Like list items, or headers.</li>
-						<li class="animated bounceInLeft">It adds some attention.</li>
-					</ul>
+				<section id="sixthmenuitem">
+					<h2>Fragen</h2>
 				</section>
-
 			</div>
 		</div>
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
-		<script src="plugin/appearance/appearance.js"></script>
+		<script src="plugin/simplemenu/simplemenu.js"></script>
 		<script async src="https://www.youtube.com/iframe_api"></script>
+		<script src="plugin/simplemenu/simplemenu.js"></script>
 		<script>
 			// YouTube Video
 			function onYouTubeIframeAPIReady() {
@@ -358,10 +566,9 @@
 
 			// Initialize Reveal JS
 			Reveal.initialize({
-				slideNumber: 'c/t',
 				hideCursorTime: 2500,
-				hash: true,
 				autoPlayMedia: true,
+				progress: true,
 
 				appearance: {
 					baseclass: 'animated',
@@ -370,7 +577,7 @@
 					delay: 300
 				},
 
-				plugins: [ RevealHighlight, Appearance ],
+				plugins: [ Simplemenu, RevealHighlight ],
 
 				chart : {
 					items : chartsObject
